@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * App Name : Employee Management (Client)
+ * file name : App.js
+ * files descriptions : this is the entry point of the whole react app
+ * Author : Md Habibul Hasan
+ * Date : 15/08/2021
+ */
+
+import Router from './router/index';
+import Context from './context/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context>
+      <Router />
+    </Context>
   );
 }
 
